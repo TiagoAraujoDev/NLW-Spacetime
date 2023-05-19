@@ -13,11 +13,11 @@ export async function GET(request: NextRequest) {
 
   const redirectUrl = new URL('/', request.url)
 
-  console.log(token)
+  const tokenExpiresInSeconds = 60 * 60 * 24 * 30
 
   return NextResponse.redirect(redirectUrl, {
     headers: {
-      'Set-Cookie': `token=${token}; path=/;`,
+      'Set-Cookie': `token=${token}; path=/; max-age=${tokenExpiresInSeconds};`,
     },
   })
 }
