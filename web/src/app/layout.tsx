@@ -51,7 +51,7 @@ export default function RootLayout({
             <Copyright />
           </div>
           {/* Right panel */}
-          <div className="flex max-h-screen flex-col overflow-y-scroll bg-[url(../assets/bg-star.svg)] bg-cover">
+          <div className="flex max-h-screen flex-col overflow-y-auto bg-[url(../assets/bg-star.svg)] bg-cover">
             {children}
           </div>
         </main>
