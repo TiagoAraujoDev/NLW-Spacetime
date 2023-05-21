@@ -1,7 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import nlwLogo from '../assets/nlw-spacetime-logo.svg'
-import Link from 'next/link'
 
 export const Hero = () => {
   return (

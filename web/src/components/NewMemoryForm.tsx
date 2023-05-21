@@ -6,6 +6,7 @@ import Cookies from 'js-cookie'
 import { useRouter } from 'next/navigation'
 
 import { MediaPicker } from './MediaPicker'
+
 import { api } from '@/lib/axios'
 
 export const NewMemoryForm = () => {
